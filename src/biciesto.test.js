@@ -6,4 +6,7 @@ describe("TDD", () => {
     it("Ingresar anio 1", () => {
     expect(TestBiciesto(1)).toBe(1);
     });
+    it("Ingresar anio 4", () => {
+        expect(TestBiciesto(4)).toBe(0);
+    });
 }); 
