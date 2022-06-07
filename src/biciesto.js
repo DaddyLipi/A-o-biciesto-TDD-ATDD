@@ -1,19 +1,13 @@
 function TestBiciesto(anio)
 {
-    if(anio==0)
+    let ans=0;
+    if(anio!=0)
     {
-        return 0;
-    }
-    else
-    {
-        if(anio%4==0)
+        if(anio%4!=0)
         {
-            return 0;
-        }
-        else
-        {
-            return 1;
+             ans=1;
         }
     }
+    return ans;
 }
 export default TestBiciesto;
