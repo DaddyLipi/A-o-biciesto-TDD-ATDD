@@ -1,15 +1,14 @@
-import sumar from "./sumador";
+import TestBiciesto from "./biciesto";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
+const Anio = document.querySelector("#Anio");
 const form = document.querySelector("#sumar-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  let resultadoAnio=document.querySelector("#resultado-anio");
+  resultadoAnio.innerHTML=Anio.value;
+  const first = Number.parseInt(Anio.value);
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + TestBiciesto(first) + "</p>";
 });

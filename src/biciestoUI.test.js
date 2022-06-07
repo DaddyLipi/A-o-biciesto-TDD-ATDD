@@ -5,11 +5,12 @@ describe("ATDD", () => {
       require("./presenter.js");
     });
     it("Test anio", () => {
+      let boton = document.querySelector("#boton-resultado");
       let anio = document.querySelector("#Anio");
       let montoVentaResultado = document.querySelector("#resultado-anio");
   
       anio.value = 2020;
-      anio.click();
-      expect(parseInt(montoVentaResultado.innerHTML)).toEqual(2);
+      boton.click();
+      expect(parseInt(montoVentaResultado.innerHTML)).toEqual(2020);
     });
   });  
