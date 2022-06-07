@@ -1,4 +1,4 @@
-/*function TestBiciesto(anio)
+function TestBiciesto(anio)
 {
     if(anio==0)
     {
@@ -17,4 +17,3 @@
     }
 }
 export default TestBiciesto;
-*/
