@@ -10,5 +10,5 @@ form.addEventListener("submit", (event) => {
   resultadoAnio.innerHTML=Anio.value;
   const first = Number.parseInt(Anio.value);
 
-  div.innerHTML = "<p>" + TestBiciesto(first) + "</p>";
+  div.innerHTML = TestBiciesto(first);
 });
